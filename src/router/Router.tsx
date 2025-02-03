@@ -7,6 +7,7 @@ import DashboardLayout from "../layouts/DashboardLayout";
 const Sermon = lazy(() => import("../pages/dashboard/Sermon"));
 const Gallery = lazy(() => import("../pages/dashboard/Gallery"));
 const AllGama = lazy(() => import("../pages/dashboard/AllGama"));
+const AllMinisters = lazy(() => import("../pages/dashboard/AllMinisters"));
 
 
 export const element = createBrowserRouter([
@@ -25,6 +26,10 @@ export const element = createBrowserRouter([
             {
                 path: "allgama",
                 element: <AllGama />
+            },
+            {
+                path: "allministers",
+                element: <AllMinisters />
             },
         ]
     }

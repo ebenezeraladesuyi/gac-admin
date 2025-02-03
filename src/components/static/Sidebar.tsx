@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom"
 import { LuFileAudio } from "react-icons/lu";
 import { AiTwotonePicture } from "react-icons/ai";
 import { FaUsers } from "react-icons/fa";
+import { FaUsersViewfinder } from "react-icons/fa6";
 
 const Sidebar = () => {
   return (
@@ -19,6 +20,10 @@ const Sidebar = () => {
 
       <NavLink to="/allgama">
         <ol className="cursor-pointer text-white flex gap-2 items-center"><span className=""><FaUsers /></span>All Registered GAMA</ol>
+      </NavLink>
+      
+      <NavLink to="/allministers">
+        <ol className="cursor-pointer text-white flex gap-2 items-center"><span className=""><FaUsersViewfinder /></span>All Registered Minister (TAAMI)</ol>
       </NavLink>
       
     </div>

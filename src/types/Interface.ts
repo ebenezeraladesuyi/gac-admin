@@ -17,3 +17,23 @@ export interface iGama {
     how : string;
     will: string;
 }
+
+export interface iMinisters {
+    _id: string;
+    title: string;
+    firstName: string;
+    middleName?: string;
+    lastName: string;
+    email: string;
+    phoneNumber: string;
+    whatsapp?: string;
+    city: string;
+    state: string;
+    country: string;
+    gender: string; // Male or Female
+    ministryCall: string; // Yes or No
+    other?: string;
+    whichMinistry: string;
+    why: string;
+    ayoAweMinImage: string | null;
+}
