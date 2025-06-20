@@ -29,7 +29,8 @@ const ElevationReg = () => {
     try {
       setLoading(true);
       const response = await axios.get(`${url}/elevation/getall`);
-      setStudents(response.data);
+      console.log("res", response)
+      setStudents(response.data.data);
     } catch (error) {
       console.error('Failed to fetch students:', error);
       toast.error('Failed to load student data');
