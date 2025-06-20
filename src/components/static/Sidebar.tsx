@@ -11,6 +11,10 @@ const Sidebar = () => {
     <div className="w-full h-[100vh] p-[20px] text-white font-bold flex flex-col gap-6 pt-[120px] bg-[#23a1db]">
 
       <NavLink to="/">
+        <ol className="cursor-pointer text-white flex gap-2 items-center"><span className=""><LuFileAudio /></span>Elevation</ol>
+      </NavLink>
+      
+      <NavLink to="/uploadsermon">
         <ol className="cursor-pointer text-white flex gap-2 items-center"><span className=""><LuFileAudio /></span>Upload Sermon</ol>
       </NavLink>
 

@@ -8,6 +8,7 @@ const Sermon = lazy(() => import("../pages/dashboard/Sermon"));
 const Gallery = lazy(() => import("../pages/dashboard/Gallery"));
 const AllGama = lazy(() => import("../pages/dashboard/AllGama"));
 const AllMinisters = lazy(() => import("../pages/dashboard/AllMinisters"));
+const ElevationReg = lazy(() => import("../pages/dashboard/ElevationReg"));
 
 
 export const element = createBrowserRouter([
@@ -17,6 +18,10 @@ export const element = createBrowserRouter([
         children : [
             {
                 index: true,
+                element: <ElevationReg />
+            },
+            {
+                path: "sermon",
                 element: <Sermon />
             },
             {
