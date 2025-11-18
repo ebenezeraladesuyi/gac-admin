@@ -21,7 +21,7 @@ export const element = createBrowserRouter([
                 element: <ElevationReg />
             },
             {
-                path: "sermon",
+                path: "uploadsermon",
                 element: <Sermon />
             },
             {
